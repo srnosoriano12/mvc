@@ -6,6 +6,22 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mvcoperacion.IndexController">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="222.0" prefWidth="248.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.mycompany.mvcoperacion.IndexController">
+   <children>
+      <Label layoutX="91.0" layoutY="14.0" text="Operaciones" />
+      <MenuButton layoutX="21.0" layoutY="121.0" mnemonicParsing="false" text="Operaciones">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#sumar" text="Sumar" />
+          <MenuItem mnemonicParsing="false" onAction="#Restar" text="Restar" />
+            <MenuItem mnemonicParsing="false" onAction="#Multiplicar" text="Multiplicar" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="num1" layoutX="84.0" layoutY="40.0" prefHeight="25.0" prefWidth="99.0" />
+      <TextField fx:id="num2" layoutX="84.0" layoutY="81.0" prefHeight="25.0" prefWidth="99.0" />
+      <Label layoutX="21.0" layoutY="44.0" text="Numero 1" />
+      <Label layoutX="21.0" layoutY="85.0" text="Numero 2" />
+      <Label layoutX="28.0" layoutY="169.0" text="Resultado:" />
+      <Label fx:id="resultado" layoutX="91.0" layoutY="169.0" />
+   </children>
 </AnchorPane>
